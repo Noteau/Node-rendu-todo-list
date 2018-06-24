@@ -1,0 +1,8 @@
+extends ../layout
+
+block content
+        h1= title
+        p #{user.pseudo} (#{user.firstname} #{user.lastname}) : #{user.email}    
+
+        form(method='POST' action="http://localhost:8080/users/" + userId + "?_method=DELETE")
+            input(type="submit" value="Supprimer")

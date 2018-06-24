@@ -1,0 +1,14 @@
+extends ../layout
+
+block content
+        h1= title
+        form(method='POST' action="http://localhost:8080/todos/" + userId + "?_method=PUT")
+            input#UserId(
+                type="text", 
+                placeholder="UserId" 
+                name="UserId")
+            input#message(
+                type="text", 
+                placeholder="message" 
+                name="message")
+            input#submit(type="submit")

@@ -1,0 +1,8 @@
+extends ../layout
+
+block content
+  h1= title
+  p Voici la liste des todos de l'utilisateur numéro #{id} :
+  ul
+    each todo in todos
+      li  #{todo.message}

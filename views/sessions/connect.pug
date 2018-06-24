@@ -1,0 +1,14 @@
+extends ../layout
+
+block content
+        h1= title
+        form(method='POST' action="http://localhost:8080/sessions")
+            input#pseudo(
+                type="text", 
+                placeholder="Pseudo" 
+                name="pseudo")
+            input#password(
+                type="password",
+                placeholder="Password"
+                name="password")
+            input#submit(type="submit")
