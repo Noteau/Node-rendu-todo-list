@@ -1,4 +1,4 @@
-#wik-njs-303-skeleton
+# Rendu du projet de Sylvain Théodore et Nicolas Yoteau
 
 Simple ExpressJS skeleton.
 
